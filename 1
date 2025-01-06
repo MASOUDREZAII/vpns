@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：06-01-2025 20:04:39
+# 创建时间：06-01-2025 21:52:13
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：2
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,81 +86,53 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80","type":"vless","server":"167.82.1.102","port":80,"uuid":"42f36835-730c-4ecc-9daf-20121ae7ba47","tls":false,"servername":"edge.validbv3528.ir","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"edge.validbv3528.ir"}}}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443","type":"vless","server":"151.101.130.228","port":443,"uuid":"591a106b-9771-4256-80a4-6b4eda1e4267","tls":true,"servername":"joinshhproxybedeeeee.ir","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"joinshhproxybedeeeee.ir"}}}
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083","type":"vless","server":"172.67.66.177","port":2083,"uuid":"d603cba7-4ec4-4744-a1df-1fcbec323066","tls":true,"servername":"germanhp.pages.dev","network":"ws","ws-opts":{"path":"/9tE1lXpBmCQDi0ki/My4xMjYuMTU5LjEy","headers":{"host":"germanhp.pages.dev"}},"alpn":["http/1.1"]}
   - {"name":"🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80","type":"vless","server":"167.82.1.102","port":80,"uuid":"253ef561-9e57-4336-befd-878ddd30df01","tls":false,"servername":"teleirani.ir","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"teleirani.ir"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80","type":"vless","server":"167.82.85.155","port":80,"uuid":"253ef561-9e57-4336-befd-878ddd30df01","tls":false,"servername":"teleirani.ir","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"teleirani.ir"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443","type":"vless","server":"151.101.2.228","port":443,"uuid":"591a106b-9771-4256-80a4-6b4eda1e4267","tls":true,"servername":"joinshhproxybedeeeee.ir","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"joinshhproxybedeeeee.ir"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -183,12 +155,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.130.228:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.66.177:2083
       - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.102:80
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.85.155:80
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
 
 rules:
 # 本地/局域网地址
