@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：08-01-2025 14:49:37
+# 创建时间：08-01-2025 22:53:23
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,53 +86,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80","type":"vless","server":"104.17.147.22","port":80,"uuid":"68b0b67a-c480-408f-b49e-78b9b3302cec","tls":false,"servername":"www.speedtest.net.nl1.70.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.tohidjanebi.xyz.","network":"ws","ws-opts":{"path":"/Telegram-Xv2ry2?ed=512","headers":{"host":"www.speedtest.net.nl1.70.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.tohidjanebi.xyz."}}}
-  - {"name":"🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053","type":"vless","server":"45.63.117.50","port":2053,"uuid":"683efd82-00f9-45f9-a43d-c1ba3f902e90","tls":true,"servername":"cpanel3.sassanidempire.com","network":"ws","ws-opts":{"path":"/ws","headers":{"host":"cpanel3.sassanidempire.com"}},"alpn":["http/1.1"]}
+  - {"name":"🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880","type":"vless","server":"65.21.52.30","port":8880,"uuid":"fdba7e86-46e3-4321-b6c4-ed01c76903e4","tls":false,"servername":"eN.TwiTtER.cOM.:8880","network":"tcp"}
+  - {"name":"🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443","type":"vmess","server":"104.21.69.44","port":443,"cipher":"auto","uuid":"c3c39f39-d8f1-47ad-b0ee-9308bbca4ab0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sth.happyground.ir","network":"grpc","grpc-opts":{"grpc-service-name":"6mHwqI1HSSVtXxCxshcV","grpc-mode":"gun"}}
+  - {"name":"🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80","type":"vless","server":"167.82.1.121","port":80,"uuid":"253ef561-9e57-4336-befd-878ddd30df01","tls":false,"servername":"teleirani.ir","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"teleirani.ir"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,8 +162,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.147.22:80
-      - 🔒 VL-WS-TLS 🇩🇪 DE-45.63.117.50:2053
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-NA 🇺🇸 US-167.82.1.121:80
 
 rules:
 # 本地/局域网地址
