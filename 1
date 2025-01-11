@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：10-01-2025 17:01:47
+# 创建时间：11-01-2025 16:05:37
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：2
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,67 +86,53 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880","type":"vless","server":"65.21.52.30","port":8880,"uuid":"3fba3117-a33a-418e-b154-db7f890c2ea0","tls":false,"servername":"eN.TwiTtER.cOM.:8880","network":"tcp"}
-  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80","type":"vless","server":"167.82.1.103","port":80,"uuid":"42f36835-730c-4ecc-9daf-20121ae7ba47","tls":false,"servername":"edge.validbv3528.ir","network":"ws","ws-opts":{"path":"/?ed=","headers":{"host":"edge.validbv3528.ir"}}}
+  - {"name":"🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879","type":"ss","server":"147.45.114.160","port":60879,"password":"zWhm52TBOkyh5cp8ucVlZS","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443","type":"vless","server":"104.21.96.1","port":443,"uuid":"b200c4d1-a2a9-42c2-9cbf-819f47056be8","tls":true,"servername":"conf.asemannetwork.ir","network":"ws","ws-opts":{"path":"/vm7no4wb20XiR8w9?ed=2560","headers":{"host":"conf.asemannetwork.ir"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443","type":"vless","server":"190.93.245.137","port":443,"uuid":"41bb7247-c37a-48ab-8421-c9f76f4ed570","tls":true,"servername":"WWW.EsfahAnsimaN.infO.","network":"ws","ws-opts":{"path":"/","headers":{"host":"WWW.EsfahAnsimaN.infO."}},"alpn":["h2","http/1.1"]}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,10 +155,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-TCP-NONE 🇫🇮 FI-65.21.52.30:8880
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.1.103:80
+      - 🔒 SS-TCP-NA 🇳🇱 NL-147.45.114.160:60879
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.1:443
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-190.93.245.137:443
 
 rules:
 # 本地/局域网地址
