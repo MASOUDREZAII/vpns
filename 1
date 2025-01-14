@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：14-01-2025 13:10:44
+# 创建时间：14-01-2025 13:47:11
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：1
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -87,8 +87,6 @@ dns:
 
 proxies:
   - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80","type":"vless","server":"167.82.0.0","port":80,"uuid":"42f36835-730c-4ecc-9daf-20121ae7ba47","tls":false,"servername":"edge.validbv3528.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"edge.validbv3528.ir"}}}
-  - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1","type":"ss","server":"81.19.141.45","port":443,"password":"0NvCFkPxZwiI7WIcGSl5nK","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2","type":"ss","server":"81.19.141.45","port":443,"password":"h1k3FGtg3hPeQ8ZXUihZF0","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -96,8 +94,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -105,8 +101,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -114,32 +108,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -163,8 +149,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_1
-      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443_2
 
 rules:
 # 本地/局域网地址
