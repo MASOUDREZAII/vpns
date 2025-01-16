@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：16-01-2025 22:40:42
+# 创建时间：16-01-2025 23:06:23
 # 使用模版：V2RaySE 默认模版
-# 节点数量：50
+# 节点数量：49
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -104,6 +104,7 @@ proxies:
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443","type":"vless","server":"104.17.148.22","port":8443,"uuid":"e179f431-b827-47fd-8304-ecf5c33f9de0","tls":true,"servername":"english-panel-yj8.pages.dev","network":"ws","ws-opts":{"path":"/z7MgRN9ox8Opaots/MzUuMjI4LjM2Ljgy?ed=2560","headers":{"host":"english-panel-yj8.pages.dev"}},"alpn":["h2","http/1.1"]}
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2","type":"vless","server":"172.65.90.52","port":2053,"uuid":"fed7b870-8d40-4337-b26b-9aca5ac4846f","tls":true,"servername":"hp-dubai.pages.dev","network":"ws","ws-opts":{"path":"/5yigHak90if9E1M1/My4yOS4xMDIuODk=?ed=2560","headers":{"host":"hp-dubai.pages.dev"}},"alpn":["h2","http/1.1"]}
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096","type":"vless","server":"172.64.146.66","port":2096,"uuid":"fed7b870-8d40-4337-b26b-9aca5ac4846f","tls":true,"servername":"hp-dubai.pages.dev","network":"ws","ws-opts":{"path":"/SgtbqZQ23mZBfgBp/My4yOS4xMDIuODk=?ed=2560","headers":{"host":"hp-dubai.pages.dev"}},"alpn":["h2","http/1.1"]}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80","type":"vless","server":"167.82.0.0","port":80,"uuid":"42f36835-730c-4ecc-9daf-20121ae7ba47","tls":false,"servername":"edge.validbv3528.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"edge.validbv3528.ir"}}}
   - {"name":"🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2","type":"vless","server":"91.107.176.100","port":443,"uuid":"c8aa52f3-dea3-4a84-b8d8-87938c1dd177","tls":true,"servername":"ad4.transitkala.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"ad4.transitkala.com"}},"alpn":["h3","h2","http/1.1"]}
   - {"name":"🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2","type":"vless","server":"91.107.180.183","port":443,"uuid":"c8aa52f3-dea3-4a84-b8d8-87938c1dd177","tls":true,"servername":"ad4.transitkala.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"ad4.transitkala.com"}},"alpn":["h3","h2","http/1.1"]}
   - {"name":"🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880","type":"vless","server":"37.27.249.87","port":8880,"uuid":"af8c881b-e949-42d3-a701-812f309a30b4","tls":false,"servername":"eN.TwiTtER.cOM.:8880","network":"tcp"}
@@ -134,8 +135,6 @@ proxies:
   - {"name":"🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880","type":"vless","server":"138.199.154.143","port":8880,"uuid":"6b970ff3-ebb2-4a32-96c2-cb3cbbd75e05","tls":false,"network":"grpc"}
   - {"name":"🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237","type":"vless","server":"185.231.205.38","port":3237,"uuid":"1d86846c-5a27-43c8-8981-57bb75c82195","tls":false,"network":"tcp"}
   - {"name":"🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237","type":"vless","server":"185.231.205.23","port":3237,"uuid":"1d86846c-5a27-43c8-8981-57bb75c82195","tls":false,"network":"tcp"}
-  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80","type":"vless","server":"167.82.0.0","port":80,"uuid":"42f36835-730c-4ecc-9daf-20121ae7ba47","tls":false,"servername":"edge.validbv3528.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"edge.validbv3528.ir"}}}
-  - {"name":"🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880","type":"vless","server":"88.216.214.56","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -160,6 +159,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -190,8 +190,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -216,6 +214,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -246,8 +245,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -272,6 +269,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -302,8 +300,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: 📲 电报信息
     type: select
     proxies:
@@ -327,6 +323,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -357,8 +354,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -382,6 +377,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -412,8 +408,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -437,6 +431,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -467,8 +462,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -509,6 +502,7 @@ proxy-groups:
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.148.22:8443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.65.90.52:2053_2
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.146.66:2096
+      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.176.100:443_2
       - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.180.183:443_2
       - 🔒 VL-TCP-NONE 🇫🇮 FI-37.27.249.87:8880
@@ -539,8 +533,6 @@ proxy-groups:
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-138.199.154.143:8880
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.38:3237
       - 🔒 VL-TCP-NONE 🇫🇷 FR-185.231.205.23:3237
-      - 🔒 VL-WS-NONE 🇺🇸 US-167.82.0.0:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-88.216.214.56:8880
 
 rules:
 # 本地/局域网地址
