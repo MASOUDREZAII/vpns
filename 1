@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：18-01-2025 13:33:05
+# 创建时间：18-01-2025 23:43:26
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：7
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,53 +86,88 @@ dns:
       - 0.0.0.0/32
 
 proxies:
+  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585","type":"vless","server":"212.80.29.231","port":33585,"uuid":"844d48b5-530d-4537-b7aa-965f2525fe12","tls":false,"servername":"chess.com","network":"tcp"}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443","type":"vless","server":"104.16.142.237","port":443,"uuid":"f1a7b991-1654-42aa-9644-26e52a9e9d3c","tls":true,"servername":"api.einetwork.news","network":"ws","ws-opts":{"path":"Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray","headers":{"host":"api.einetwork.news"}},"alpn":["h3","h2","http/1.1"]}
   - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443","type":"vless","server":"172.66.213.38","port":443,"uuid":"c650b795-aa5b-49d4-9cec-4c3c7ba6c31f","tls":true,"servername":"mansdhuuidjcn.vip202030.com.tr","network":"ws","ws-opts":{"path":"/Zfr830dnZPEB19Nr6lo","headers":{"host":"mansdhuuidjcn.vip202030.com.tr"}},"alpn":["h2"]}
-  - {"name":"🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443","type":"vless","server":"188.245.241.172","port":443,"uuid":"743a9ecc-095b-47bf-8d08-8a51acac0eb2","tls":true,"servername":"hozori.ir","network":"ws","ws-opts":{"path":"/fasffasfsA","headers":{"host":"hozori.ir"}},"alpn":["h3","h2","http/1.1"]}
+  - {"name":"15|US_speednode_0034","type":"vless","server":"167.82.1.121","port":80,"uuid":"253ef561-9e57-4336-befd-878ddd30df01","tls":false,"servername":"teleirani.ir","network":"ws","ws-opts":{"path":"/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560","headers":{"host":"teleirani.ir"}}}
+  - {"name":"15|US_speednode_0055","type":"vless","server":"198.41.198.40","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048","headers":{"host":"a.mifeng.us.kg"}}}
+  - {"name":"15|US_speednode_0056","type":"vless","server":"141.101.122.107","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048","headers":{"host":"a.mifeng.us.kg"}}}
+  - {"name":"15|US_speednode_0058","type":"vless","server":"173.245.49.53","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048","headers":{"host":"a.mifeng.us.kg"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,8 +190,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-212.80.29.231:33585
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.142.237:443
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.213.38:443
-      - 🔒 VL-WS-TLS 🇩🇪 DE-188.245.241.172:443
+      - 15|US_speednode_0034
+      - 15|US_speednode_0055
+      - 15|US_speednode_0056
+      - 15|US_speednode_0058
 
 rules:
 # 本地/局域网地址
