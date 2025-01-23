@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：23-01-2025 11:37:53
+# 创建时间：24-01-2025 01:32:33
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,74 +86,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443","type":"vless","server":"151.101.2.228","port":443,"uuid":"910dba5a-bf48-445a-80d7-da990918f008","tls":true,"servername":"fonmelo.com","network":"ws","ws-opts":{"path":"/olem/ws?ed=4096@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn","headers":{"host":"fonmelo.com"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443","type":"vless","server":"151.101.66.228","port":443,"uuid":"910dba5a-bf48-445a-80d7-da990918f008","tls":true,"servername":"fonmelo.com","network":"ws","ws-opts":{"path":"/olem/ws?ed=4096@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn","headers":{"host":"fonmelo.com"}},"alpn":["h2","http/1.1"]}
-  - {"name":"[🇳🇱]t.me/ConfigsHub`","type":"vless","server":"zmaoz.faculty.ucdavis.edu","port":443,"uuid":"910dba5a-bf48-445a-80d7-da990918f008","tls":true,"servername":"fonmelo.com","network":"ws","ws-opts":{"path":"/olem/ws?ed=4096@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn","headers":{"host":"fonmelo.com"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443","type":"vless","server":"192.0.54.235","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/","headers":{"host":"mmdserver.us.kg"}}}
   - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052","type":"vless","server":"172.67.70.123","port":2052,"uuid":"dfc1a9ab-6241-4b73-92f7-b299fc6b7751","tls":false,"servername":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net.","network":"ws","ws-opts":{"path":"/?ed=1080Telegram_V2ray_Alpha","headers":{"host":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net."}}}
+  - {"name":"🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880","type":"vless","server":"88.216.214.16","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"15|US_speednode_0058","type":"vless","server":"173.245.49.53","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048","headers":{"host":"a.mifeng.us.kg"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -176,11 +162,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.2.228:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.66.228:443
-      - '[🇳🇱]t.me/ConfigsHub`'
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.0.54.235:443
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
+      - 🔒 VL-GRPC-NONE 🇸🇪 SE-88.216.214.16:8880
+      - 15|US_speednode_0058
 
 rules:
 # 本地/局域网地址
