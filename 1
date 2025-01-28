@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：28-01-2025 11:19:06
+# 创建时间：28-01-2025 13:36:51
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：25
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,17 +86,29 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087","type":"vless","server":"172.67.204.84","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"],"client-fingerprint":"chrome"}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087","type":"vless","server":"104.21.69.44","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"],"client-fingerprint":"chrome"}
+  - {"name":"🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443","type":"vless","server":"104.21.64.1","port":443,"uuid":"2a943112-138b-432d-a3a5-277ea2fd8a2e","tls":true,"servername":"Tp770I9mUb.AlTaBaNiC.iR","network":"grpc"}
+  - {"name":"🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443","type":"vmess","server":"104.21.69.44","port":443,"cipher":"auto","uuid":"b575f433-530f-4ea0-a405-f3014fba0787","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sth.happyground.ir","network":"grpc","grpc-opts":{"grpc-service-name":"6mHwqI1HSSVtXxCxshcV","grpc-mode":"gun"}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096","type":"vless","server":"104.26.14.16","port":2096,"uuid":"e734c438-bbd5-4957-8419-c7d41dde0053","tls":true,"servername":"bEAt.MIRaclETaxbiTS.Top.","network":"ws","ws-opts":{"path":"/2096/@VRayyNGvpn","headers":{"host":"bEAt.MIRaclETaxbiTS.Top."}},"alpn":["h2","http/1.1"]}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443","type":"vless","server":"108.162.194.232","port":443,"uuid":"96e58617-20f9-4d4c-aa7f-c60da2bb2e1c","tls":true,"servername":"ad1m08.kalastore.org","network":"ws","ws-opts":{"path":"/wss","headers":{"host":"ad1m08.kalastore.org"}},"alpn":["http/1.1"]}
+  - {"name":"🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240","type":"vless","server":"135.181.155.147","port":40240,"uuid":"b178ad90-5167-46af-9ed9-54ea713e057a","tls":false,"servername":"canva.com","network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80","type":"vless","server":"151.101.130.219","port":80,"uuid":"e5d2deca-af4e-48d8-d34e-759ed713ac7e","tls":false,"servername":"foffmelo.com","network":"ws","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
+  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443","type":"vless","server":"151.101.194.228","port":443,"uuid":"59866431-7b5a-4dd9-a900-5091ae4021f1","tls":true,"servername":"fonmelo.com","network":"ws","ws-opts":{"path":"/olem/ws?ed=4096","headers":{"host":"fonmelo.com"}},"alpn":["h2","http/1.1"]}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443","type":"vless","server":"172.64.34.232","port":443,"uuid":"96e58617-20f9-4d4c-aa7f-c60da2bb2e1c","tls":true,"servername":"ad1m08.kalastore.org","network":"ws","ws-opts":{"path":"/wss","headers":{"host":"ad1m08.kalastore.org"}},"alpn":["http/1.1"]}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443","type":"vless","server":"172.64.35.157","port":443,"uuid":"32f7e59a-9209-42fd-85b5-8bc6f64ab36c","tls":true,"servername":"v47c2j.p1vpn.com","network":"ws","ws-opts":{"path":"/wss","headers":{"host":"v47c2j.p1vpn.com"}},"alpn":["http/1.1"]}
+  - {"name":"🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443","type":"vmess","server":"172.67.204.84","port":443,"cipher":"auto","uuid":"b575f433-530f-4ea0-a405-f3014fba0787","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sth.happyground.ir","network":"grpc","grpc-opts":{"grpc-service-name":"6mHwqI1HSSVtXxCxshcV","grpc-mode":"gun"}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096","type":"vless","server":"172.67.69.236","port":2096,"uuid":"e734c438-bbd5-4957-8419-c7d41dde0053","tls":true,"servername":"bEAt.MIRaclETaxbiTS.Top.","network":"ws","ws-opts":{"path":"/2096/@VRayyNGvpn","headers":{"host":"bEAt.MIRaclETaxbiTS.Top."}},"alpn":["h2","http/1.1"]}
+  - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745","type":"vless","server":"188.245.208.177","port":26745,"uuid":"a79f88dc-17e0-4438-92e7-f64e50154e0a","tls":false,"servername":"speedtest.net","network":"tcp"}
+  - {"name":"🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072","type":"vless","server":"188.34.201.88","port":16072,"uuid":"c935aba0-8835-426a-a585-225baee13f70","tls":false,"network":"grpc"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1","type":"ss","server":"3.11.144.9","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2","type":"ss","server":"3.11.144.9","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666","type":"vless","server":"49.12.200.119","port":6666,"uuid":"abe50f90-3647-4c0d-d5f6-f563b892fdf4","tls":false,"network":"grpc","grpc-opts":{"grpc-service-name":"/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy/@BinexTiFy"}}
+  - {"name":"🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880","type":"vless","server":"95.217.186.120","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087","type":"vless","server":"172.67.204.84","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"]}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087","type":"vless","server":"104.21.69.44","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"]}
   - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443","type":"vless","server":"160.153.137.128","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
   - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443","type":"vless","server":"160.153.0.183","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
   - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443","type":"vless","server":"160.153.0.131","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
   - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443","type":"vless","server":"160.153.0.116","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080","type":"vless","server":"172.67.204.84","port":8080,"uuid":"70baeba0-f40b-4cc2-8f18-d3aae916d83b","tls":false,"servername":"seyyed.webdade.ip-ddns.com","network":"ws","ws-opts":{"path":"/telegram---VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram----VPNCUSTOMIZE?ed=2048","headers":{"host":"seyyed.webdade.ip-ddns.com"}}}
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052","type":"vless","server":"172.67.70.123","port":2052,"uuid":"dfc1a9ab-6241-4b73-92f7-b299fc6b7751","tls":false,"servername":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net.","network":"ws","ws-opts":{"path":"/?ed=1080Telegram_V2ray_Alpha","headers":{"host":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net."}}}
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080","type":"vless","server":"104.21.69.44","port":8080,"uuid":"70baeba0-f40b-4cc2-8f18-d3aae916d83b","tls":false,"servername":"seyyed.webdade.ip-ddns.com","network":"ws","ws-opts":{"path":"/telegram---VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram----VPNCUSTOMIZE?ed=2048","headers":{"host":"seyyed.webdade.ip-ddns.com"}}}
-  - {"name":"🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040","type":"vless","server":"85.208.139.13","port":2040,"udp":true,"uuid":"66924fa3-47cf-4272-a290-9bd476ebc6cd","tls":true,"servername":"github.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs"},"client-fingerprint":"chrome"}
-  - {"name":"🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443","type":"vless","server":"194.182.84.53","port":443,"udp":true,"uuid":"2fcbb974-5841-4a54-bc4a-0bc38aade4a1","tls":true,"servername":"wordpress.org","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl"},"reality-opts":{"public-key":"DpSW8adQoMP_hcXxdAGD6PPdrHuwYbFomzJmBmtsqxM","short-id":"e3f189ed"},"client-fingerprint":"randomized"}
   - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650","type":"ss","server":"85.192.28.213","port":6650,"password":"jlhVIf6X4xZa1z5nhPNlRK","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇷🇺","type":"ss","server":"85.192.28.213","port":6650,"password":"2f75IeSgXRNglLdvO61gIR","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -105,17 +117,29 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: ♻️ 自动选择
@@ -124,17 +148,29 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: 🌍 国外媒体
@@ -143,17 +179,29 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: 📲 电报信息
@@ -161,17 +209,29 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: Ⓜ️ 微软服务
@@ -179,17 +239,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: 🍎 苹果服务
@@ -197,17 +269,29 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
   - name: 🎯 全球直连
@@ -232,17 +316,29 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.64.1:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.26.14.16:2096
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-108.162.194.232:443
+      - 🔒 VL-TCP-NONE 🇫🇮 FI-135.181.155.147:40240
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.219:80
+      - 🔒 VL-WS-TLS 🇺🇸 US-151.101.194.228:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.34.232:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.64.35.157:443
+      - 🔒 VM-GRPC-TLS 🏴‍☠️ NA-172.67.204.84:443
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.69.236:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-188.245.208.177:26745
+      - 🔒 VL-GRPC-NONE 🇩🇪 DE-188.34.201.88:16072
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-3.11.144.9:443_2
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-49.12.200.119:6666
+      - 🔒 VL-GRPC-NONE 🇫🇮 FI-95.217.186.120:8880
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
       - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
       - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.204.84:8080
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.69.44:8080
-      - 🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139.13:2040
-      - 🔒 VL-GRPC-RLT 🇨🇿 CZ-194.182.84.53:443
       - 🔒 SS-TCP-NA 🇩🇪 DE-85.192.28.213:6650
       - 🇷🇺
 
