@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：30-01-2025 10:56:46
+# 创建时间：01-02-2025 00:21:48
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,109 +86,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇩🇪 _德国","type":"ss","server":"185.177.229.245","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087","type":"vless","server":"104.21.69.44","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087","type":"vless","server":"172.67.204.84","port":2087,"uuid":"31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9","tls":true,"servername":"Tp771RuMn5.AlTaBaNiC.iR","network":"ws","ws-opts":{"path":"/","headers":{"host":"Tp771RuMn5.AlTaBaNiC.iR"}},"alpn":["h2","http/1.1"]}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443","type":"vless","server":"160.153.137.128","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80","type":"vless","server":"151.101.3.8","port":80,"uuid":"3cbc61fa-0dd9-40a8-b80f-fb3aea91ca85","tls":false,"servername":"External_Net.org","network":"ws","ws-opts":{"path":"?=9090","headers":{"host":"External_Net.org"}}}
   - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052","type":"vless","server":"172.67.70.123","port":2052,"uuid":"dfc1a9ab-6241-4b73-92f7-b299fc6b7751","tls":false,"servername":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net.","network":"ws","ws-opts":{"path":"/?ed=1080Telegram_V2ray_Alpha","headers":{"host":"hit.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.betrat.com.eu.com.sh847.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.fffffffff.ddns-ip.net."}}}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443","type":"vless","server":"104.21.96.87","port":443,"uuid":"b981829e-9bd1-4a7d-880d-9169fc2bd275","tls":true,"servername":"pPAL03.JESSy-pAdbErg.workERs.deV","network":"ws","ws-opts":{"path":"/","headers":{"host":"pPAL03.JESSy-pAdbErg.workERs.deV"}}}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443","type":"vless","server":"160.153.0.131","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443","type":"vless","server":"160.153.0.116","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443","type":"vless","server":"160.153.0.183","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
-  - {"name":"🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443","type":"vless","server":"104.21.69.44","port":443,"uuid":"2a943112-138b-432d-a3a5-277ea2fd8a2e","tls":true,"servername":"Tp773Os476.AlTaBaNiC.iR","network":"grpc"}
+  - {"name":"🇩🇪 _德国","type":"ss","server":"185.177.229.245","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +162,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 _德国
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.69.44:2087
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.84:2087
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.137.128:8443
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.3.8:80
       - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.70.123:2052
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.96.87:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.131:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.116:8443
-      - 🔒 VL-WS-TLS 🇺🇸 US-160.153.0.183:8443
-      - 🔒 VL-GRPC-TLS 🏴‍☠️ NA-104.21.69.44:443
+      - 🇩🇪 _德国
 
 rules:
 # 本地/局域网地址
