@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：16-03-2025 10:20:05
+# 创建时间：16-03-2025 22:38:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：7
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,109 +86,88 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443","type":"vless","server":"188.95.65.163","port":443,"uuid":"d2760579-350f-4f75-91f0-f3d5a12bdaf0","tls":true,"servername":"download.dilik.co","flow":"xtls-rprx-vision","network":"tcp","alpn":["h2","http/1.1"]}
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443","type":"ss","server":"35.176.197.229","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551","type":"ss","server":"87.98.242.137","port":49551,"password":"XwoHfpvuczzHOkOebGXiUO","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80","type":"vless","server":"45.131.4.82","port":80,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"servername":"301.pooriam.ir","network":"ws","ws-opts":{"path":"/","headers":{"host":"301.pooriam.ir"}}}
   - {"name":"🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880","type":"vless","server":"45.131.4.33","port":8880,"uuid":"f6bd2c47-99da-4bca-bf70-7186aa9e7e06","tls":false,"servername":"photographipictureai.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"photographipictureai.ir"}}}
-  - {"name":"🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443","type":"vless","server":"135.148.14.15","port":443,"uuid":"e20ebe01-1815-4c09-8e77-fb2f168263ce","tls":true,"servername":"147135001178.sec22org.com","network":"tcp"}
-  - {"name":"🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087","type":"vless","server":"192.200.160.188","port":2087,"uuid":"462594b1-0553-4051-83a5-49e33db88bcd","tls":true,"servername":"crm.iranigamebaz.ir","network":"ws","ws-opts":{"path":"/Vpnmizban--------Vpnmizban--------Vpnmizban----Vpnmizban--------Vpnmizban----Vpnmizban--------Vpnmizban----Vpnmizban--------Vpnmizban----Vpnmizban","headers":{"host":"crm.iranigamebaz.ir"}},"alpn":["h3","h2","http/1.1"]}
-  - {"name":"🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880","type":"vless","server":"95.216.171.50","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443","type":"ss","server":"35.176.197.229","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105","type":"ss","server":"40.160.8.211","port":11105,"password":"5a69bdc1bf4cd927","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443","type":"vless","server":"135.148.14.15","port":443,"uuid":"e20ebe01-1815-4c09-8e77-fb2f168263ce","tls":true,"servername":"147135001178.sec22org.com","network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80","type":"vless","server":"45.131.4.82","port":80,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"servername":"301.pooriam.ir","network":"ws","ws-opts":{"path":"/","headers":{"host":"301.pooriam.ir"}}}
   - {"name":"🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658","type":"ss","server":"109.61.18.99","port":23658,"password":"5c9c8c20877eccc2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880","type":"vless","server":"95.216.171.50","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,16 +190,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-TCP-TLS 🇩🇪 DE-188.95.65.163:443
-      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
-      - 🔒 SS-TCP-NA 🇩🇪 DE-87.98.242.137:49551
-      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.33:8880
-      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
-      - 🔒 VL-WS-TLS 🇺🇸 US-192.200.160.188:2087
-      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
+      - 🔒 SS-TCP-NA 🇬🇧 GB-35.176.197.229:443
       - 🔒 SS-TCP-NA 🇺🇸 US-40.160.8.211:11105
+      - 🔒 VL-RAW-TLS 🇺🇸 US-135.148.14.15:443
+      - 🔒 VL-WS-NONE 🇳🇱 NL-45.131.4.82:80
       - 🔒 SS-TCP-NA 🇦🇪 AE-109.61.18.99:23658
+      - 🔒 VL-GRPC-NA 🇫🇮 FI-95.216.171.50:8880
 
 rules:
 # 本地/局域网地址
