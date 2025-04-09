@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：08-04-2025 14:15:57
+# 创建时间：10-04-2025 00:51:19
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：3
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,88 +86,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80","type":"vless","server":"188.114.97.155","port":80,"uuid":"7c9e3c1d-a360-4429-9189-e45a98de7fde","tls":false,"servername":"showmo.wfft.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"showmo.wfft.ir"}}}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443","type":"vless","server":"104.21.8.214","port":443,"uuid":"4d3e4850-83e4-4e9e-a4c1-0f11c43663e7","tls":true,"servername":"crolinde.carlotta.cloudns.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"crolinde.carlotta.cloudns.org"}}}
-  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80","type":"vless","server":"162.159.152.2","port":80,"uuid":"50e2cab1-c919-434d-a7d4-78dcd42fe963","tls":false,"servername":"aparat.ir.rubika.ir.google.com.xn--cr8haaa.xn--cr8haaaaa.29.a.apaspeedtest.netrat.com.eu.com.shw914.ir.xn--cr8ha.vpncustomize.V2ryng01.ru:0","network":"ws","ws-opts":{"path":"/Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE?ed=2560","headers":{"host":"aparat.ir.rubika.ir.google.com.xn--cr8haaa.xn--cr8haaaaa.29.a.apaspeedtest.netrat.com.eu.com.shw914.ir.xn--cr8ha.vpncustomize.V2ryng01.ru:0"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80","type":"vless","server":"188.114.97.3","port":80,"uuid":"c5293efa-28f8-4a0f-8f34-541078970cee","tls":false,"servername":"gozargah.validbv7996.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"gozargah.validbv7996.ir"}}}
-  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80","type":"vless","server":"188.114.97.155","port":80,"uuid":"7c9e3c1d-a360-4429-9189-e45a98de7fde","tls":false,"servername":"showmo.wfft.ir","network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560?/@JOKERRVPNTelegram:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN-JOKERRVPN:@JOKERRVPN","headers":{"host":"showmo.wfft.ir"}}}
-  - {"name":"🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880","type":"vless","server":"84.32.9.55","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
-  - {"name":"🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880","type":"vless","server":"84.32.9.48","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000","type":"vless","server":"85.133.206.197","port":14000,"uuid":"cb2f962e-82bd-4541-9a8e-878400c85f12","tls":false,"servername":"rubika.ir.igap.net.soft98.ir","network":"tcp"}
+  - {"name":"1|🇩🇪1 |  5.0MB/s","type":"vless","server":"104.17.147.22","port":8880,"uuid":"21d889b6-78c3-4ad0-be32-145bc41f68d6","tls":false,"servername":"VPNCUSTOMIZE.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net.","network":"ws","ws-opts":{"path":"/Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048flow=-udp443","headers":{"host":"VPNCUSTOMIZE.www.webdade.com.www.speedtest.net.irna.ir.ips.ddns-ip.net."}}}
+  - {"name":"🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745","type":"vless","server":"188.245.32.66","port":26745,"uuid":"3b8d3bcd-aadd-4f3f-ae6d-b41f3d51697b","tls":false,"servername":"speedtest.net","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -190,13 +162,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.8.214:443
-      - 🔒 VL-WS-NA 🏴‍☠️ NA-162.159.152.2:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.3:80
-      - 🔒 VL-WS-NONE 🏴‍☠️ NA-188.114.97.155:80
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.55:8880
-      - 🔒 VL-GRPC-NONE 🇱🇹 LT-84.32.9.48:8880
+      - 🔒 VL-TCP-NONE 🇮🇷 IR-85.133.206.197:14000
+      - 1|🇩🇪1 |  5.0MB/s
+      - 🔒 VL-TCP-NA 🇩🇪 DE-188.245.32.66:26745
 
 rules:
 # 本地/局域网地址
