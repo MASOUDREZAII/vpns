@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：02-05-2025 13:25:40
+# 客户端：Clash.Meta
+# 创建时间：02-05-2025 13:26:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：5
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,53 +86,74 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇬🇧GB-131.145.20.27-1060","type":"ss","server":"admin.c2.webramz.co","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB-172.166.80.19-1051","type":"ss","server":"admin.c4.webramz.co","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880","type":"vless","server":"78.47.141.72","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880","type":"vless","server":"88.216.187.192","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
+  - {"name":"🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608","type":"vless","server":"194.182.79.218","port":19608,"uuid":"39984db4-f2e5-43c0-918e-665caf48a96c","tls":false,"network":"grpc","grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048"}}
+  - {"name":"🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888","type":"vless","server":"194.182.79.46","port":14888,"uuid":"3d7af9a2-82d9-473a-b902-7c4871d5fa22","tls":false,"network":"grpc","grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048"}}
+  - {"name":"🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880","type":"vless","server":"88.216.187.193","port":8880,"uuid":"df0680ca-e43c-498d-ed86-8e196eedd012","tls":false,"network":"grpc"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,8 +176,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧GB-131.145.20.27-1060
-      - 🇬🇧GB-172.166.80.19-1051
+      - 🔒 VL-GRPC-NA 🇩🇪 DE-78.47.141.72:8880
+      - 🔒 VL-GRPC-NA 🇳🇱 NL-88.216.187.192:8880
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.218:19608
+      - 🔒 VL-GRPC-NONE 🇨🇿 CZ-194.182.79.46:14888
+      - 🔒 VL-GRPC-NONE 🇳🇱 NL-88.216.187.193:8880
 
 rules:
 # 本地/局域网地址
