@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：09-05-2025 16:05:14
+# 创建时间：12-05-2025 21:17:12
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,60 +86,67 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1","type":"ss","server":"74.177.198.118","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2","type":"ss","server":"74.177.198.118","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096","type":"vless","server":"45.12.31.3","port":2096,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"LhCgBjGr29.vElTrIxS.OrG","network":"ws","ws-opts":{"path":"/","headers":{"host":"LhCgBjGr29.vElTrIxS.OrG"}},"alpn":["h3","h2"]}
+  - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940","type":"vless","server":"116.203.149.50","port":22940,"uuid":"fa48e979-5c53-4ead-9e0a-b33cb02bea95","tls":false,"servername":"help.filimo.com","network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80","type":"vless","server":"151.101.130.133","port":80,"uuid":"6601fbeb-81aa-4cef-aba5-c2d944431ee0","tls":false,"servername":"namehmain.com","network":"ws","ws-opts":{"path":"/TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray?ed=2048","headers":{"host":"namehmain.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80","type":"vless","server":"151.101.2.165","port":80,"uuid":"6601fbeb-81aa-4cef-aba5-c2d944431ee0","tls":false,"servername":"namehmain.com","network":"ws","ws-opts":{"path":"/TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray?ed=2048","headers":{"host":"namehmain.com"}}}
+  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80","type":"vless","server":"151.101.194.133","port":80,"uuid":"6601fbeb-81aa-4cef-aba5-c2d944431ee0","tls":false,"servername":"namehmain.com","network":"ws","ws-opts":{"path":"/TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray,TELEGRAM-@mainv2-ray?ed=2048","headers":{"host":"namehmain.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,9 +169,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.198.118:443_2
-      - 🔒 VL-WS-TLS 🇷🇴 RO-45.12.31.3:2096
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.130.133:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.165:80
+      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.194.133:80
 
 rules:
 # 本地/局域网地址
