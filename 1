@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：13-05-2025 18:35:02
+# 创建时间：14-05-2025 17:22:32
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：6
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,67 +86,81 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940","type":"vless","server":"116.203.149.50","port":22940,"uuid":"c45700b2-bd89-4ddf-8fe0-214224d2d313","tls":false,"servername":"help.filimo.com","network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080","type":"vless","server":"104.19.54.50","port":8080,"uuid":"d8b04c6a-bafd-47a9-993a-6f8f7d0998fe","tls":false,"servername":"www.speedtest.net.www.zula.ir.cloudflare.com.www.parsvds.ir.svgspeedtest.net.","network":"ws","ws-opts":{"path":"/@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048","headers":{"host":"www.speedtest.net.www.zula.ir.cloudflare.com.www.parsvds.ir.svgspeedtest.net."}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052","type":"vless","server":"172.67.24.121","port":2052,"uuid":"76fbf88a-f7d3-4b3a-b6f4-1fdfc569f0de","tls":false,"servername":"mosiv2.eliii.mosiv2.mosiv2.www.speedtest.net.mosiv2.mosic7.info.","network":"ws","ws-opts":{"path":"/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2?ed=2560","headers":{"host":"mosiv2.eliii.mosiv2.mosiv2.www.speedtest.net.mosiv2.mosic7.info."}}}
+  - {"name":"🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097","type":"vless","server":"94.159.100.135","port":35097,"uuid":"d9e674f2-b1ab-470d-937c-5e2eb0d74751","tls":true,"servername":"de.uzilol.cn","network":"ws","ws-opts":{"path":"/rangws"}}
   - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878","type":"vless","server":"49.12.105.24","port":20878,"uuid":"ebef07c5-c68b-4fd5-aa91-cefa18d010c7","tls":false,"network":"tcp"}
-  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443","type":"vless","server":"172.66.168.218","port":443,"uuid":"5130522b-1ca5-4435-bf18-ac5b5b3bde56","tls":true,"servername":"maxnETvIp-UsA-vP1.mAxNeTcLOudseRvICE.COM","network":"ws","ws-opts":{"path":"/linkws?ed=2560","headers":{"host":"maxnETvIp-UsA-vP1.mAxNeTcLOudseRvICE.COM"}}}
-  - {"name":"🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80","type":"vless","server":"151.101.2.228","port":80,"uuid":"fe8cca00-b7b4-488c-9730-8553da3652cc","tls":false,"servername":"joinxvproxybedee.ir","network":"ws","ws-opts":{"path":"/@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048","headers":{"host":"joinxvproxybedee.ir"}}}
+  - {"name":"2|🌀3-TR |  5.0MB/s|Openai","type":"vless","server":"94.131.108.195","port":53221,"uuid":"90efad13-d266-4d10-a914-bc40028ec469","tls":false,"network":"tcp"}
+  - {"name":"🇱🇹 LT_196","type":"ss","server":"45.87.175.188","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,10 +183,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VL-TCP-NONE 🇩🇪 DE-116.203.149.50:22940
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.19.54.50:8080
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-172.67.24.121:2052
+      - 🔒 VL-WS-TLS 🇩🇪 DE-94.159.100.135:35097
       - 🔒 VL-TCP-NONE 🇩🇪 DE-49.12.105.24:20878
-      - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.168.218:443
-      - 🔒 VL-WS-NONE 🇺🇸 US-151.101.2.228:80
+      - 2|🌀3-TR |  5.0MB/s|Openai
+      - 🇱🇹 LT_196
 
 rules:
 # 本地/局域网地址
