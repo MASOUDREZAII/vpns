@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：08-06-2025 22:26:21
+# 客户端：Clash.Meta
+# 创建时间：09-06-2025 17:48:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：12
+# 节点数量：31
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,123 +86,256 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598","type":"vmess","server":"5.180.30.85","port":18598,"cipher":"auto","uuid":"bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443","type":"trojan","server":"103.116.7.20","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"icecream.955850.xyz"}}}
-  - {"name":"🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443","type":"trojan","server":"194.76.18.122","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/proxyip=194.76.18.122:443","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🇨🇦CA-146.19.106.154-5354","type":"trojan","server":"both-cramp-banjo.stark-industries.solutions","port":443,"udp":true,"password":"3482c71a-d01c-4ae5-b454-fa8cb3785f66","sni":"both-cramp-banjo.stark-industries.solutions","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇱🇹 LT_192","type":"ss","server":"beesyar.org","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇱🇹 LT_193","type":"ss","server":"45.87.175.181","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇱🇹 LT_216","type":"ss","server":"45.87.175.181","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443","type":"ss","server":"81.19.141.45","port":443,"password":"0aILNbNDkm6wX9idlJPzNE","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1","type":"ss","server":"45.158.171.146","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2","type":"ss","server":"45.158.171.146","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1","type":"ss","server":"131.145.77.200","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2","type":"ss","server":"131.145.77.200","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1","type":"ss","server":"4.158.79.124","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2","type":"ss","server":"4.158.79.124","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3","type":"ss","server":"4.158.79.124","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443","type":"ss","server":"74.177.194.209","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443","type":"trojan","server":"212.183.88.58","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443","type":"trojan","server":"6884d714-d3c4-4b49-aa20-767ea92837d6@185.16.110.113:443?security=tls&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=/Telegram@V2ray_Alpha","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6@185.16.110.113:443?security=tls&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=/Telegram","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1","type":"trojan","server":"217.163.76.221","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/proxyip=217.163.76.221:443","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2","type":"trojan","server":"V2ray_Alpha/217.163.76.221","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6@217.163.76.221:443?security=tls&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=/Telegram","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha/217.163.76.221:443","headers":{"host":"icecream.955850.xyz"}}}
   - {"name":"🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443","type":"trojan","server":"217.163.76.227","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/proxyip=217.163.76.227:443","headers":{"host":"icecream.955850.xyz"}}}
-  - {"name":"🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443","type":"trojan","server":"217.163.76.221","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/proxyip=217.163.76.221:443","headers":{"host":"icecream.955850.xyz"}}}
-  - {"name":"🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343","type":"ss","server":"77.246.98.67","port":4343,"password":"DragrzS9rCC3pX6K2lOueU","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1","type":"ss","server":"131.145.20.27","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2","type":"ss","server":"131.145.20.27","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080","type":"ss","server":"45.158.171.151","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080","type":"ss","server":"45.158.171.146","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803","type":"ss","server":"45.144.54.33","port":34803,"password":"LiHQX9cDbdooBHlIg0eiqQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇱🇹 LT_326","type":"ss","server":"beesyar.org","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443","type":"trojan","server":"194.76.18.122","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/proxyip=194.76.18.122:443","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443","type":"trojan","server":"6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.196:443?security=tls&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=/Telegram@V2ray_Alpha","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6@45.67.215.196:443?security=tls&sni=icecream.955850.xyz&type=ws&host=icecream.955850.xyz&path=/Telegram","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Telegram@V2ray_Alpha","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443","type":"trojan","server":"103.116.7.20","port":443,"udp":true,"password":"6884d714-d3c4-4b49-aa20-767ea92837d6","sni":"icecream.955850.xyz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"icecream.955850.xyz"}}}
+  - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344","type":"vless","server":"157.230.17.102","port":16344,"uuid":"ff9bebc5-7d9c-44ac-93c2-eef35603d63a","tls":false,"network":"tcp"}
+  - {"name":"🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80","type":"vless","server":"14.102.228.75","port":80,"uuid":"b49d8a13-12f6-4613-bb0d-3e2f6244f29c","tls":false,"servername":"ov-canada1.09vpn.com","network":"ws","ws-opts":{"path":"/vless/","headers":{"host":"ov-canada1.09vpn.com"}}}
+  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80","type":"vless","server":"104.17.148.22","port":80,"uuid":"60645605-da25-43cf-875a-058dcd0c7b4c","tls":false,"servername":"Www.speedtest.net.developsp.ir.vegaskala.com.","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"Www.speedtest.net.developsp.ir.vegaskala.com."}}}
+  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052","type":"vless","server":"104.21.80.196","port":2052,"uuid":"81edc46d-139c-4a28-a5f6-50eb4fe9a74e","tls":false,"servername":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store.","network":"ws","ws-opts":{"path":"@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048","headers":{"host":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store."}}}
+  - {"name":"🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052","type":"vless","server":"172.67.187.26","port":2052,"uuid":"81edc46d-139c-4a28-a5f6-50eb4fe9a74e","tls":false,"servername":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store.","network":"ws","ws-opts":{"path":"@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048","headers":{"host":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store."}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052","type":"vless","server":"104.21.80.196","port":2052,"uuid":"81edc46d-139c-4a28-a5f6-50eb4fe9a74e","tls":false,"servername":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store.","network":"ws","ws-opts":{"path":"@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048","headers":{"host":"wWw.SpeedtesT.net.xn--hibye-hg1hw1ovzaf50bop5bc33awx0ajxfqk4giqq.store."}}}
+  - {"name":"🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443","type":"vless","server":"64.188.97.173","port":443,"uuid":"524ef193-d0ee-4f6b-bf0b-1ab15a76cc9a","tls":true,"servername":"europeless.duckdns.org","network":"ws","ws-opts":{"path":"/getupdates","headers":{"host":"europeless.duckdns.org"}}}
+  - {"name":"🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598","type":"vmess","server":"5.180.30.85","port":18598,"cipher":"auto","uuid":"bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088","type":"vmess","server":"2.56.125.101","port":38088,"cipher":"auto","uuid":"1275ea18-bc9c-4bcb-b3fd-fee70272e143","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国 CloudFlare节点","type":"vmess","server":"tci1.tiamoci.us.kg","port":8080,"cipher":"auto","uuid":"53892d11-81b9-464a-abd8-78c72c48f1b0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"tci1.tiamoci.us.kg"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -224,18 +358,37 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
-      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
-      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🇨🇦CA-146.19.106.154-5354
+      - 🇱🇹 LT_192
+      - 🇱🇹 LT_193
+      - 🇱🇹 LT_216
+      - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_1
+      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.77.200:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_2
+      - 🔒 SS-TCP-NA 🇬🇧 GB-4.158.79.124:443_3
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.194.209:443
+      - 🔒 TR-WS-TLS 🇦🇹 AT-212.183.88.58:443
+      - 🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.113:443
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_1
+      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443_2
       - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.227:443
-      - 🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.221:443
-      - 🔒 SS-TCP-NA 🇳🇱 NL-77.246.98.67:4343
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_1
-      - 🔒 SS-TCP-NA 🇬🇧 GB-131.145.20.27:443_2
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.151:8080
-      - 🔒 SS-TCP-NA 🇫🇷 FR-45.158.171.146:8080
-      - 🔒 SS-TCP-NA 🇩🇪 DE-45.144.54.33:34803
-      - 🇱🇹 LT_326
+      - 🔒 TR-WS-TLS 🇰🇿 KZ-194.76.18.122:443
+      - 🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.196:443
+      - 🔒 TR-WS-TLS 🇺🇸 US-103.116.7.20:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:16344
+      - 🔒 VL-WS-NA 🇺🇸 US-14.102.228.75:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.17.148.22:80
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-NA 🏴‍☠️ NA-172.67.187.26:2052
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.21.80.196:2052
+      - 🔒 VL-WS-TLS 🇳🇱 NL-64.188.97.173:443
+      - 🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:18598
+      - 🔒 VM-TCP-NA 🇵🇱 PL-2.56.125.101:38088
+      - 美国 CloudFlare节点
 
 rules:
 # 本地/局域网地址
