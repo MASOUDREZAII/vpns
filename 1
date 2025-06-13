@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：13-06-2025 13:49:31
+# 创建时间：13-06-2025 15:54:56
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：5
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -88,6 +88,8 @@ dns:
 proxies:
   - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516","type":"vless","server":"95.179.247.124","port":50516,"uuid":"aa136e7a-7046-4df5-a0ea-6c2b07a2834f","tls":false,"network":"tcp"}
   - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746","type":"vless","server":"157.230.17.102","port":23746,"uuid":"2344be7e-f118-425b-aff3-9a31b906ed74","tls":false,"network":"tcp"}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80","type":"vless","server":"104.17.147.22","port":80,"uuid":"6fb6e835-23c5-4309-b362-b3c1da78d5b2","tls":false,"servername":"Www.speedtest.net.developsp.ir.vegaskala.com.","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"Www.speedtest.net.developsp.ir.vegaskala.com."}}}
+  - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80","type":"vless","server":"104.17.148.22","port":80,"uuid":"6fb6e835-23c5-4309-b362-b3c1da78d5b2","tls":false,"servername":"Www.speedtest.net.developsp.ir.vegaskala.com.","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"Www.speedtest.net.developsp.ir.vegaskala.com."}}}
   - {"name":"🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410","type":"vless","server":"157.230.17.102","port":24410,"uuid":"eccbc8a3-d6f2-44ae-aa98-fa7fa4082971","tls":false,"network":"grpc"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -97,6 +99,8 @@ proxy-groups:
       - DIRECT
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: ♻️ 自动选择
     type: url-test
@@ -106,6 +110,8 @@ proxy-groups:
     proxies:
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: 🌍 国外媒体
     type: select
@@ -115,6 +121,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: 📲 电报信息
     type: select
@@ -123,6 +131,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: Ⓜ️ 微软服务
     type: select
@@ -131,6 +141,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: 🍎 苹果服务
     type: select
@@ -139,6 +151,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
   - name: 🎯 全球直连
     type: select
@@ -164,6 +178,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔒 VL-TCP-NONE 🇩🇪 DE-95.179.247.124:50516
       - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:23746
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
+      - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-GRPC-NONE 🇩🇪 DE-157.230.17.102:24410
 
 rules:
