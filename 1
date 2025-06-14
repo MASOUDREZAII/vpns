@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：13-06-2025 17:34:57
+# 创建时间：14-06-2025 11:32:14
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,81 +86,67 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"14|US_speednode_0140","type":"vless","server":"www.speedtest.net","port":2082,"uuid":"0b8dc82b-fb0f-45b5-f753-d736e36af6b8","tls":false,"servername":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.","network":"ws","ws-opts":{"path":"/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082","headers":{"host":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top."}}}
+  - {"name":"🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443","type":"vless","server":"104.17.147.22","port":443,"uuid":"0d0782a3-2c62-4936-b893-5790188778ea","tls":true,"servername":"EoIiDbXhQp.GiGa1.OrG","network":"ws","ws-opts":{"path":"/","headers":{"host":"EoIiDbXhQp.GiGa1.OrG"}},"alpn":["h3","h2"]}
+  - {"name":"🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916","type":"vless","server":"157.230.17.102","port":54916,"uuid":"8d805e66-1f01-4279-a381-772274cd6931","tls":false,"network":"tcp"}
   - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80","type":"vless","server":"104.17.148.22","port":80,"uuid":"6fb6e835-23c5-4309-b362-b3c1da78d5b2","tls":false,"servername":"Www.speedtest.net.developsp.ir.vegaskala.com.","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"Www.speedtest.net.developsp.ir.vegaskala.com."}}}
   - {"name":"🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80","type":"vless","server":"104.17.147.22","port":80,"uuid":"6fb6e835-23c5-4309-b362-b3c1da78d5b2","tls":false,"servername":"Www.speedtest.net.developsp.ir.vegaskala.com.","network":"ws","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"Www.speedtest.net.developsp.ir.vegaskala.com."}}}
-  - {"name":"14|US_speednode_0142","type":"vless","server":"www.speedtest.net","port":80,"uuid":"d78628e8-5b51-4452-b3ce-79f3249b5755","tls":false,"servername":"www.speedtest.net.1.developsp.ir.gebados.ir.","network":"ws","ws-opts":{"path":"/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048","headers":{"host":"www.speedtest.net.1.developsp.ir.gebados.ir."}}}
-  - {"name":"14|US_speednode_0139","type":"vless","server":"104.17.148.22","port":80,"uuid":"d78628e8-5b51-4452-b3ce-79f3249b5755","tls":false,"servername":"www.speedtest.net.1.developsp.ir.gebados.ir.","network":"ws","ws-opts":{"path":"/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048","headers":{"host":"www.speedtest.net.1.developsp.ir.gebados.ir."}}}
-  - {"name":"🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171","type":"vless","server":"85.9.100.234","port":57171,"uuid":"0e2faa95-54ea-4e95-8625-548021f6d5e4","tls":false,"servername":"telewebion.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -183,12 +169,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14|US_speednode_0140
+      - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.147.22:443
+      - 🔒 VL-TCP-NONE 🇩🇪 DE-157.230.17.102:54916
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.148.22:80
       - 🔒 VL-WS-NONE 🏴‍☠️ NA-104.17.147.22:80
-      - 14|US_speednode_0142
-      - 14|US_speednode_0139
-      - 🔒 VL-TCP-NA 🇮🇷 IR-85.9.100.234:57171
 
 rules:
 # 本地/局域网地址
