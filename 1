@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：15-06-2025 12:49:51
+# 客户端：Clash.Meta
+# 创建时间：15-06-2025 21:19:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,67 +86,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443","type":"ss","server":"74.177.123.174","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1","type":"ss","server":"74.177.216.193","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443","type":"ss","server":"74.177.123.174","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2","type":"ss","server":"74.177.216.193","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443","type":"ss","server":"81.19.141.45","port":443,"password":"TkhU2urQBQ70OawfWlqMoR","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"CF中转_06150511103","type":"vless","server":"104.17.147.22","port":443,"uuid":"0d0782a3-2c62-4936-b893-5790188778ea","tls":true,"servername":"XbU10cS9vT.gIgA1.oRg","network":"ws","ws-opts":{"path":"/","headers":{"host":"XbU10cS9vT.gIgA1.oRg"}},"alpn":["h3","h2"]}
+  - {"name":"CF中转_06150510037","type":"vless","server":"104.17.147.22","port":443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"Wv2NhB0hVh.SoLiJoNiTo.CoM","network":"ws","ws-opts":{"path":"/","headers":{"host":"Wv2NhB0hVh.SoLiJoNiTo.CoM"}}}
+  - {"name":"未知_0615051387","type":"vless","server":"www.speedtest.net","port":2082,"uuid":"4a19c093-77a5-4bec-fc5c-029a0c8cb815","tls":false,"servername":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.","network":"ws","ws-opts":{"path":"/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082","headers":{"host":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top."}}}
+  - {"name":"未知_0615051175","type":"vless","server":"www.speedtest.net","port":2082,"uuid":"39bf9466-122a-43f2-8476-08e49161a080","tls":false,"servername":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.","network":"ws","ws-opts":{"path":"/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082","headers":{"host":"novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top."}}}
+  - {"name":"未知_0615051027","type":"vless","server":"www.speedtest.net","port":443,"uuid":"0d0782a3-2c62-4936-b893-5790188778ea","tls":true,"servername":"XbU10cS9vT.gIgA1.oRg","network":"ws","ws-opts":{"path":"/","headers":{"host":"XbU10cS9vT.gIgA1.oRg"}},"alpn":["h3","h2"]}
+  - {"name":"未知_0615052027","type":"vless","server":"www.speedtest.net","port":80,"uuid":"telegram-id-ArV2ray2","tls":false,"servername":"www.speedtest.net.b.1.speedtest2029.com.","network":"ws","ws-opts":{"path":"/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry","headers":{"host":"www.speedtest.net.b.1.speedtest2029.com."}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -168,10 +211,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_1
+      - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.123.174:443
       - 🔒 SS-TCP-NA 🇬🇧 GB-74.177.216.193:443_2
       - 🔒 SS-TCP-NA 🇩🇪 DE-81.19.141.45:443
+      - CF中转_06150511103
+      - CF中转_06150510037
+      - 未知_0615051387
+      - 未知_0615051175
+      - 未知_0615051027
+      - 未知_0615052027
 
 rules:
 # 本地/局域网地址
